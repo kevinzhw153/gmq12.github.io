@@ -11,6 +11,13 @@ div.card {
     margin:1% 2%;
     padding:1%;
 }
+a {
+    color:#2ca5c5;
+    text-decoration:none;
+}
+a:hover {
+    color:#2cc52c;
+}
 .center {
     text-align:center;
 }

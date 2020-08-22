@@ -36,6 +36,7 @@
     color:#fdfdfd;
     margin:1%;
     font-size:1.5em;
+    text-decoration:none;
 }
 #nav a:hover {
     color:rgba(0,0,0,1);
@@ -60,8 +61,8 @@
     margin:auto auto;
 }
 #myname {
-    color:#2ca5c5;
     text-align:center;
+    font-size:1.2em;
 }
 #footer {
     width:100%;

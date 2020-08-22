@@ -20,23 +20,43 @@ function createNavigator() {
     nav.appendChild(learn);
 }
 function createRight() {
+    /**************** 头像+名字 ****************/
     var right=document.getElementById("right");
     var profile=document.createElement("div");
     var image=document.createElement("img");
     var myname=document.createElement("p");
+    var aboutme=document.createElement("a");
     image.src="https://gmq12.github.io/image/icon.png";
     image.id="avatar";
-    myname.innerHTML="gmq12";
+    aboutme.innerHTML="gmq12";
+    aboutme.href="https://gmq12.github.io/about/me/";
     myname.id="myname";
+    myname.appendChild(aboutme);
     profile.classList.add("card");
     profile.appendChild(image);
     profile.appendChild(myname);
     right.appendChild(profile);
+    /**************** 友链 ****************/
+    var link=document.createElement("div");
+    var title=document.createElement("p");
+    var zxp=document.createElement("p");
+    var zhw=document.createElement("p");
+    link.classList.add("card");
+    title.classList.add("center");
+    title.innerHTML="友链："
+    zxp.classList.add("center");
+    zxp.innerHTML="<a href='https://zxp2019.github.io/'>zxp_oistream</a>";
+    zhw.classList.add("center");
+    zhw.innerHTML="<a href='https://kevinzhw153.github.io/'>kevinzhw</a>"
+    link.appendChild(title);
+    link.appendChild(zxp);
+    link.appendChild(zhw);
+    right.appendChild(link);
 }
 function createFooter() {
     var footer=document.getElementById("footer");
     var foot=document.createElement("div");
-    foot.classList+="card";
+    foot.classList.add("card");
     var text=document.createElement("p");
     text.innerHTML="By 2020 gmq12 | 联系我:<a href='mailto:gmq14159@gmail.com' class='footerlink'>gmq14159@gmail.com</a>"
     text.classList+="center small";
