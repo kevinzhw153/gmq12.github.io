@@ -27,6 +27,8 @@ function createRight() {
     var myname=document.createElement("p");
     var aboutme=document.createElement("a");
     image.src="https://gmq12.github.io/image/icon.png";
+    image.style.width="80%";
+    image.style.height="80%";
     image.id="avatar";
     aboutme.innerHTML="gmq12";
     aboutme.href="https://gmq12.github.io/about/me/";
