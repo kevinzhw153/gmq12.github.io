@@ -23,7 +23,7 @@ function createRight() {
     var profile=document.createElement("div");
     var image=document.createElement("img");
     var myname=document.createElement("p");
-    image.src="./image/icon.png";
+    image.src="https://gmq12.github.io/image/icon.png";
     image.id="avatar";
     myname.innerHTML="gmq12";
     myname.id="myname";
