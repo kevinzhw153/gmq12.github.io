@@ -1,6 +1,6 @@
 var blog=[
-    ["博客/测试","https://gmq12.github.io/blog/test/","测试"],
-    ["一些有用的网站","https://gmq12.github.io/blog/some-useful-websites/","分享"]
+    ["一些有用的网站","https://gmq12.github.io/blog/some-useful-websites/","分享"],
+    ["博客/测试","https://gmq12.github.io/blog/test/","测试"]
 ]
 function showBlogTitle() {
     var left=document.getElementById("left");

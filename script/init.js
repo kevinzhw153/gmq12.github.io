@@ -13,11 +13,15 @@ function createNavigator() {
     var nav=document.getElementById("nav");
     var blog=document.createElement("a");
     var learn=document.createElement("a");
+    var game=document.createElement("a");
     blog.innerHTML="<i class='fa fa-book'></i>博客";
     blog.href="https://gmq12.github.io/";
     nav.appendChild(blog);
     learn.innerHTML="<i class='fa fa-pencil'></i>学习";
+    learn.href="https://gmq12.github.io/learn/";
     nav.appendChild(learn);
+    game.innerHTML="<i class='fa fa-gamepad'></i>游戏";
+    nav.appendChild(game);
 }
 function createRight() {
     /**************** 头像+名字 ****************/
@@ -30,7 +34,7 @@ function createRight() {
     image.style.width="80%";
     image.style.height="80%";
     image.id="avatar";
-    aboutme.innerHTML="gmq12";
+    aboutme.innerHTML="<i class='fa fa-user'></i>gmq12";
     aboutme.href="https://gmq12.github.io/about/me/";
     myname.id="myname";
     myname.appendChild(aboutme);
@@ -45,7 +49,7 @@ function createRight() {
     var zhw=document.createElement("p");
     link.classList.add("card");
     title.classList.add("center");
-    title.innerHTML="友链："
+    title.innerHTML="<i class='fa fa-users'></i>友链："
     zxp.classList.add("center");
     zxp.innerHTML="<a href='https://zxp2019.github.io/'>zxp_oistream</a>";
     zhw.classList.add("center");
@@ -60,7 +64,7 @@ function createFooter() {
     var foot=document.createElement("div");
     foot.classList.add("card");
     var text=document.createElement("p");
-    text.innerHTML="By 2020 gmq12 | 联系我:<a href='mailto:gmq14159@gmail.com' class='footerlink'>gmq14159@gmail.com</a>"
+    text.innerHTML="By 2020 (&copyright;) gmq12 | 联系我:<a href='mailto:gmq14159@gmail.com' class='footerlink'>gmq14159@gmail.com</a>"
     text.classList+="center small";
     foot.appendChild(text);
     footer.appendChild(foot);
