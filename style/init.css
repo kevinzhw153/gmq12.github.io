@@ -63,3 +63,12 @@
     color:#2ca5c5;
     text-align:center;
 }
+#footer {
+    width:100%;
+    background-color:rgba(0,0,0,0);
+    clear:both;
+}
+.footerlink {
+    text-decoration:none;
+    color:#2ca5c5;
+}

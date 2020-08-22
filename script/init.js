@@ -14,6 +14,7 @@ function createNavigator() {
     var blog=document.createElement("a");
     var learn=document.createElement("a");
     blog.innerHTML="<i class='fa fa-book'></i>博客";
+    blog.href="https://gmq12.github.io/";
     nav.appendChild(blog);
     learn.innerHTML="<i class='fa fa-pencil'></i>学习";
     nav.appendChild(learn);
@@ -32,6 +33,17 @@ function createRight() {
     profile.appendChild(myname);
     right.appendChild(profile);
 }
+function createFooter() {
+    var footer=document.getElementById("footer");
+    var foot=document.createElement("div");
+    foot.classList+="card";
+    var text=document.createElement("p");
+    text.innerHTML="By 2020 gmq12 | contact me: <a href='mailto:gmq14159@gmail.com' class='footerlink'>gmq14159@gmail.com</a>"
+    text.classList+="center small";
+    foot.appendChild(text);
+    footer.appendChild(foot);
+}
 createHeading();
 createNavigator();
 createRight();
+createFooter();

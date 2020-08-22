@@ -11,7 +11,7 @@ div.card {
     margin:1% 2%;
     padding:1%;
 }
-p.center {
+.center {
     text-align:center;
 }
 .float-left {
@@ -19,6 +19,15 @@ p.center {
 }
 .float-right {
     float:right;
+}
+.small {
+    font-size:"0.5em";
+}
+.big {
+    font-size:"2em";
+}
+.huge {
+    font-size:"6em";
 }
 .fblue {
     color:#2ca5c5;
