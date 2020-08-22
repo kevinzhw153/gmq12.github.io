@@ -7,7 +7,7 @@ function createHeading() {
     heading.appendChild(title);
     title.style.textAlign="center";
     linktitle.id="title";
-    linktitle.setAttribute("href",".");
+    linktitle.href="https://gmq12.github.io/";
 }
 function createNavigator() {
     var nav=document.getElementById("nav");
@@ -38,7 +38,7 @@ function createFooter() {
     var foot=document.createElement("div");
     foot.classList+="card";
     var text=document.createElement("p");
-    text.innerHTML="By 2020 gmq12 | contact me: <a href='mailto:gmq14159@gmail.com' class='footerlink'>gmq14159@gmail.com</a>"
+    text.innerHTML="By 2020 gmq12 | 联系我:<a href='mailto:gmq14159@gmail.com' class='footerlink'>gmq14159@gmail.com</a>"
     text.classList+="center small";
     foot.appendChild(text);
     footer.appendChild(foot);
