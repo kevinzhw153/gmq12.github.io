@@ -4,7 +4,7 @@
     <title>首页|gmq12的博客</title>
     <meta charset="UTF-8" />
     <!--css-->
-    <link rel="stylesheet" href="./style/init.css" />
+    <link rel="stylesheet" href="https://gmq12.github.io/style/init.css" />
     <link rel="stylesheet" href="https://gmq12.github.io/style/elem.css" />
     <!--font awesome-->
     <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
@@ -20,6 +20,13 @@
     </div>
     <div id="body">
         <div id="left">
+            <div class="card">
+                <div class="center" style="background-color:rgba(0,0,0,0)">
+                    输入标签查找文章：
+                    <input type="text" id="tagname" />
+                    <button id="submit">确定</button>
+                </div>
+            </div>
         </div>
         <div id="right"></div>
     </div>
@@ -29,7 +36,11 @@
     <!--初始化博客标题javascript-->
     <script src="https://gmq12.github.io/script/blog.js"></script>
     <script>
-        showBlogTitle();
+        showBlogTitleByTagName(document.getElementById("tagname").value);
+        document.getElementById("submit").addEventListener("click",function(){
+            removeArticleTitle();
+            showBlogTitleByTagName(document.getElementById("tagname").value);
+        })
     </script>
 </body>
 </html>
